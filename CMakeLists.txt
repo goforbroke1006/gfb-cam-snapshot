@@ -17,3 +17,5 @@ if (Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
     target_link_libraries(gfb-cam-snapshot ${Boost_LIBRARIES})
 endif ()
+
+install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
